@@ -26,13 +26,88 @@
     <nav>
       <ul>
         <li><a href="index.html" >Inicio</a></li>
-        <li><a href="educación.html" target="blank">Educación</a></li>
-        <li><a href="experiencia.html" target="blank">Experiencia</a></li>
+        <li><a href="educacion.html" >Educación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
       </ul>
     </nav>
+    <hr>
     <article >
       <h2>Información Personal</h2>
       <img src="img/3X4.jpg" alt="Foto Jairo" title="Foto para Curriculum" width="100px">
+      <h2>Educación</h2>
+      <table border="1px" cellpadding="10px" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culmino?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2011</td>
+            <td>Instituto San Bernardo De la Salle</td>
+            <td>Bogota, Colombia</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>Fachhochschule Kufstein Tirol</td>
+            <td>Kufstein, Austria</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>Nextu</td>
+            <td>Bogota, Colombia</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <form class="" action="index.html" method="post">
+        <fieldset>
+          <legend><h4>Agregar Estudios</h4></legend>
+        <label for="year"><strong>Año</strong></label>
+        <select name="año" id="year">
+          <option>2017</option>
+          <option>2016</option>
+          <option>2015</option>
+          <option>2014</option>
+          <option>2013</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
+          <option>2009</option>
+          <option>2008</option>
+          <option>2007</option>
+          <option>2006</option>
+          <option>2005</option>
+        </select>
+      </br>
+        <label for="institution"><strong>Institución:</strong></label>
+        <input type="text" name="institucion" id="institution" placeholder="Agregar institución" required>
+        <br>
+        <label for="place"><strong>Lugar:</strong></label>
+        <textarea name="lugar" id="place" rows="5" cols="80" placeholder="Agregar Lugar" required></textarea>
+        <br>
+        <label for="finished"><strong>¿Culminó?</strong></label>
+        <input type="radio" name="Culminacion" id="finished-yes" value="Si" required > Si
+        <input type="radio" name="Culminacion" id="finished-no" value="No"> No
+        <br>
+        <input type="submit" name="enviar" value="enviar" id="send">
+        </fieldset>
+      </form>
     </article>
+    <hr>
+    <footer>
+      <strong>© Todos Los derechos reservados</strong>
+      <ul>
+        <li><strong>Correo:</strong> jakor@live.com</li>
+        <li><strong>Telefono:</strong> (57) 3045880392</li>
+        <li><strong>Dirección:</strong> Carrera 12D # 11-52</li>
+      </ul>
+    </footer>
   </body>
 </html>
